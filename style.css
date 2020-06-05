@@ -1,0 +1,109 @@
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #186ac9;
+  font-family: "Ubuntu", sans-serif;
+  transition: all 0.5s ease-in-out;
+}
+
+.top {
+  text-align: center;
+  letter-spacing: 2px;
+  background-color: black;
+  color: #186ac9;
+  padding: 15px;
+}
+main {
+  height: calc(100vh - 130px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.color {
+  cursor: pointer;
+}
+.btn {
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 6px;
+  color: black;
+  background-color: moccasin;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 10px;
+  font-size: 18px;
+  transition: all 0.3s ease-in;
+}
+.btn:hover {
+  opacity: 0.9;
+  color: black;
+}
+.generator {
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 6px;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+  border: 1px solid black;
+}
+.generator h2,
+.generator h3 {
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+.palettes {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.palette-container {
+  display: grid;
+  grid-template-columns: 60% 12% 10% auto auto auto;
+  height: 10vh;
+  width: 70vw;
+  text-align: center;
+  border: 4px solid black;
+}
+.palettes h3,
+.palettes h4,
+.palettes i {
+  margin-bottom: 20px;
+}
+footer {
+  text-align: center;
+  color: black;
+  letter-spacing: 4px;
+  font-style: italic;
+  font-weight: bolder;
+}
+footer a {
+  color: black;
+  text-decoration: none;
+}
+@media (min-width: 770px) {
+  .palette-container {
+    width: 500px;
+  }
+  .generator {
+    padding: 40px;
+    letter-spacing: 2px;
+  }
+}
+@media (max-height: 575px) {
+  .generator {
+    margin-bottom: 20px;
+  }
+  .palettes h3,
+  .palettes h4,
+  .palettes i {
+    margin-bottom: 10px;
+  }
+}
